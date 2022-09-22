@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(slf4j, None, None)[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: slf4j[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid project ID: slf4j[0m
+[0m[[0m[31merror[0m] [0m[0mExpected ':'[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid key: slf4j[0m
+[0m[[0m[31merror[0m] [0m[0mslf4j[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

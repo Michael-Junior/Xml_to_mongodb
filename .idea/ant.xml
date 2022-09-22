@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AntConfiguration">
+    <buildFile url="jar://$USER_HOME$/.sbt/boot/scala-2.12.16/org.scala-sbt/sbt/1.7.1/scala-compiler-2.12.16.jar!/META-INF/maven/jline/jline/pom.xml" />
+  </component>
+</project>
