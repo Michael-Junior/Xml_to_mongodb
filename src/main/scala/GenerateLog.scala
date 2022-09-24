@@ -5,27 +5,24 @@ import java.io.IOException
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
-import java.util
 
 class GenerateLog {
 
-  def initLog(listFiles: util.ArrayList[String]): Unit = {
-    listFiles.forEach(f => {
+  def initLog(listFiles: collection.mutable.ListBuffer[String]): Unit = {
+    listFiles.foreach(f => {
       createFolderLog(s"Arquivo não inserido: $f")
-    })
+    })  
   }
 
   def createFolderLog(message: String): Unit = {
 
-    val path = Paths.get("/home/oem/Meus_projetos/log")
+    val path = Paths.get("/home/oliveirmic/local-documents/log")
     if (!Files.exists(path)) Files.createDirectory(path)
     createDescribesLog(message)
   }
+  def createDescribesLog(message: String): Unit = {
 
-
-  def createDescribesLog(message: String) : Unit = {
-
-    val log = new File("/home/oem/Meus_projetos/log/logs.txt")
+    val log = new File("/home/oliveirmic/local-documents/log/logs.txt")
 
     if (!log.exists) log.createNewFile
 

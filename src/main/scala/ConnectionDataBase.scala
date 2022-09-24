@@ -10,8 +10,8 @@ class ConnectionDataBase(clear: Boolean){
   val usrPswStr: String = ""
   val hostStr: String = "localhost"
   val portStr: String = "27017"
-  val database: String = "BdTeste"
-  val collection: String = "teste"
+  val database: String = "DataProcessing"
+  val collection: String = "fruits"
 
   val mongoUri: String = s"mongodb://$usrPswStr$hostStr:$portStr"
   val mongoClient: MongoClient = MongoClients.create(mongoUri)
