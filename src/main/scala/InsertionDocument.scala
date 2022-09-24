@@ -5,13 +5,10 @@ import org.json4s.native.JsonMethods.render
 import org.json4s.Xml.toJson
 import org.json4s.JValue
 
-import java.util
-
 object InsertionDocument extends App {
 
   val connectionDataBase = new ConnectionDataBase(true)
   val importFileXmlLocal = new ConnectionLocal()
-  val listJson = util.ArrayList[String]
 
   def xml2json(xml: String): String = {
 
@@ -21,11 +18,10 @@ object InsertionDocument extends App {
     compact(render(json))
   }
 
-  def insertDocumentDatabase(matches: util.ArrayList[String]): Unit = {
+  def insertDocumentDatabase(matches: collection.mutable.ListBuffer[String]): Unit = {
 
-    matches.forEach(f => {
+    matches.foreach(f => {
       val document = xml2json(f)
-      listJson.add(document)
       connectionDataBase.insertDocument(document)
     })
   }

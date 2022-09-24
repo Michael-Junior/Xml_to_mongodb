@@ -6,25 +6,25 @@ import java.util
 
 class ConnectionLocal() {
 
-  val currentRelativePath: Path = Paths.get("/home/oem/Meus_projetos/")
+  val currentRelativePath: Path = Paths.get("/home/oliveirmic/local-documents")
   val url: String = currentRelativePath.toString + "/Import"
   val dir = new File(url)
 
-  val listXmlImportados = new util.ArrayList[String]
-  val listDocumentosRecusados = new util.ArrayList[String]
+  val listXmlImportados = collection.mutable.ListBuffer[String]()
+  val listDocumentosRecusados = collection.mutable.ListBuffer[String]()
 
-  val matches: Array[File] = dir.listFiles(
+  val matches: collection.mutable.Seq[File] = dir.listFiles(
     new FilenameFilter :
       override def accept(dir: File, name: String):
       Boolean = if name.startsWith("arquivo") && name.endsWith(".xml") then true
       else {
-        listDocumentosRecusados.add(name)
+        listDocumentosRecusados += name
         GenerateLog().initLog(listDocumentosRecusados)
         false
       }
   )
 
-  def convertXmlString(): util.ArrayList[String] = {
+  def convertXmlString(): collection.mutable.ListBuffer[String] = {
 
     matches.foreach(f => {
         println(s"Documentos inseridos com sucesso: $f")
@@ -32,7 +32,7 @@ class ConnectionLocal() {
         val xmlFile = new File(f.toString)
         val b = Files.readAllBytes(xmlFile.toPath)
         val xml = new String(b)
-        listXmlImportados.add(xml)
+        listXmlImportados += xml
       })
     listXmlImportados
   }
