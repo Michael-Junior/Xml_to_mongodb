@@ -1,17 +1,19 @@
 import com.mongodb.client.result.InsertOneResult
 import com.mongodb.client.{MongoClient, MongoClients, MongoCollection, MongoDatabase}
 import org.bson.{BsonValue, Document}
+import org.w3c.dom.NodeList
 
 import java.util
 import scala.jdk.CollectionConverters.{CollectionHasAsScala, SeqHasAsJava}
+import scala.util.Try
 
-class ConnectionDataBase(clear: Boolean){
+class ConnectionDataBase(usrPswStr: String, hostStr: String, portStr: String, database: String, collection: String, clear: Boolean) {
 
-  val usrPswStr: String = ""
-  val hostStr: String = "localhost"
-  val portStr: String = "27017"
-  val database: String = "DataProcessing"
-  val collection: String = "fruits"
+  val this.usrPswStr: String = usrPswStr
+  val this.hostStr: String = hostStr
+  val this.portStr: String = portStr
+  val this.database: String = database
+  val this.collection: String = collection
 
   val mongoUri: String = s"mongodb://$usrPswStr$hostStr:$portStr"
   val mongoClient: MongoClient = MongoClients.create(mongoUri)
@@ -23,17 +25,22 @@ class ConnectionDataBase(clear: Boolean){
   else
     dbase.getCollection(collection)
 
-  def insertDocument(doc: String): String = {
-    val document: Document = Document.parse(doc)
-    val insertResult: InsertOneResult = coll.insertOne(document)
+  def insertDocument(doc: String): Try[String] = {
 
-    insertResult.getInsertedId.toString
+    Try{
+      val document: Document = Document.parse(doc)
+      val insertResult: InsertOneResult = coll.insertOne(document)
+
+      insertResult.getInsertedId.toString
+    }
   }
 
-  def insertDocuments(docs: Seq[String]): Seq[String] = {
-    val documents: util.List[Document] = docs.map(Document.parse).asJava
-    val insertedIds: util.Collection[BsonValue] = coll.insertMany(documents).getInsertedIds.values()
-    
-    insertedIds.asScala.toSeq.map(_.asObjectId().getValue.toString())
+  def insertDocuments(docs: Seq[String]): Try[Seq[String]] = {
+    Try{
+      val documents: util.List[Document] = docs.map(Document.parse).asJava
+      val insertedIds: util.Collection[BsonValue] = coll.insertMany(documents).getInsertedIds.values()
+
+      insertedIds.asScala.toSeq.map(_.asObjectId().getValue.toString())
+    }
   }
 }

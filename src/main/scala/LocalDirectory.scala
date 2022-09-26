@@ -1,17 +1,18 @@
 import com.sun.source.tree.ContinueTree
 
+import javax.xml.parsers.DocumentBuilderFactory
+
 import java.io.{File, FilenameFilter}
 import java.nio.file.{Files, Path, Paths}
 import java.util
 
-class ConnectionLocal() {
+class LocalDirectory() {
+
+  val listDocumentosRecusados, listXmlImportados: collection.mutable.ListBuffer[String] = collection.mutable.ListBuffer()
 
   val currentRelativePath: Path = Paths.get("/home/oliveirmic/local-documents")
   val url: String = currentRelativePath.toString + "/Import"
   val dir = new File(url)
-
-  val listXmlImportados = collection.mutable.ListBuffer[String]()
-  val listDocumentosRecusados = collection.mutable.ListBuffer[String]()
 
   val matches: collection.mutable.Seq[File] = dir.listFiles(
     new FilenameFilter :
@@ -19,7 +20,7 @@ class ConnectionLocal() {
       Boolean = if name.startsWith("arquivo") && name.endsWith(".xml") then true
       else {
         listDocumentosRecusados += name
-        GenerateLog().initLog(listDocumentosRecusados)
+        LogGenerator().logGenerator(listDocumentosRecusados)
         false
       }
   )
@@ -27,13 +28,17 @@ class ConnectionLocal() {
   def convertXmlString(): collection.mutable.ListBuffer[String] = {
 
     matches.foreach(f => {
-        println(s"Documentos inseridos com sucesso: $f")
 
-        val xmlFile = new File(f.toString)
-        val b = Files.readAllBytes(xmlFile.toPath)
-        val xml = new String(b)
-        listXmlImportados += xml
-      })
+      val xmlFile = new File(f.toString)
+      val b = Files.readAllBytes(xmlFile.toPath)
+      val xml = new String(b)
+
+//      val dbf = DocumentBuilderFactory.newInstance
+//      val db = dbf.newDocumentBuilder
+//      val document = xmlFile.parse(db)
+
+      listXmlImportados += xml
+    })
     listXmlImportados
   }
 }
