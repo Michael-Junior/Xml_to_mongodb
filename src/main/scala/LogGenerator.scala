@@ -6,9 +6,9 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
-class GenerateLog {
+class LogGenerator {
 
-  def initLog(listFiles: collection.mutable.ListBuffer[String]): Unit = {
+  def logGenerator(listFiles: collection.mutable.ListBuffer[String]): Unit = {
     listFiles.foreach(f => {
       createFolderLog(s"Arquivo não inserido: $f")
     })  
