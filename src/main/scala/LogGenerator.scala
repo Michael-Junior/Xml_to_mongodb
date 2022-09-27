@@ -8,25 +8,21 @@ import java.nio.file.Paths
 
 class LogGenerator {
 
-  def logGenerator(listFiles: collection.mutable.ListBuffer[String]): Unit = {
-    listFiles.foreach(f => {
-      createFolderLog(s"Arquivo não inserido: $f")
-    })  
+  val messageLog: String = "Arquivo não inserido: "
+  val pathFolderLog: Path = Paths.get("/home/oliveirmic/local-documents/log")
+
+  def logGenerator(nameFileRejected: String, message: String = messageLog): Unit = {
+
+    if (!Files.exists(pathFolderLog)) Files.createDirectory(pathFolderLog)
+    createFileLog(s"$message $nameFileRejected.")
   }
 
-  def createFolderLog(message: String): Unit = {
+  def createFileLog(message: String): Unit = {
 
-    val path = Paths.get("/home/oliveirmic/local-documents/log")
-    if (!Files.exists(path)) Files.createDirectory(path)
-    createDescribesLog(message)
-  }
-  def createDescribesLog(message: String): Unit = {
+    val pathFileLog = new File(s"$pathFolderLog/logs.txt")
+    if (!pathFileLog.exists) pathFileLog.createNewFile
 
-    val log = new File("/home/oliveirmic/local-documents/log/logs.txt")
-
-    if (!log.exists) log.createNewFile
-
-    val fileWriter = new FileWriter(log, true)
+    val fileWriter = new FileWriter(pathFileLog, true)
     val bufferedWriter = new BufferedWriter(fileWriter)
 
     bufferedWriter.write(message)

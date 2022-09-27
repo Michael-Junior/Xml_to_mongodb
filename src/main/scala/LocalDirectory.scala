@@ -8,19 +8,19 @@ import java.util
 
 class LocalDirectory() {
 
-  val listDocumentosRecusados, listXmlImportados: collection.mutable.ListBuffer[String] = collection.mutable.ListBuffer()
+  val listDocumentosRecusados, listXmlImportados: collection.mutable.ListBuffer[String] = collection.mutable.ListBuffer[String]()
 
   val currentRelativePath: Path = Paths.get("/home/oliveirmic/local-documents")
-  val url: String = currentRelativePath.toString + "/Import"
-  val dir = new File(url)
+  val url: String = currentRelativePath.toString + "/importTest/"
+  val listFile = new File(url)
 
-  val matches: collection.mutable.Seq[File] = dir.listFiles(
+  val matches: collection.mutable.Seq[File] = listFile.listFiles(
     new FilenameFilter :
       override def accept(dir: File, name: String):
       Boolean = if name.startsWith("arquivo") && name.endsWith(".xml") then true
       else {
         listDocumentosRecusados += name
-        LogGenerator().logGenerator(listDocumentosRecusados)
+        LogGenerator().logGenerator(name)
         false
       }
   )
