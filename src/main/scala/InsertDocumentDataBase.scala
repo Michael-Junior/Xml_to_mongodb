@@ -6,14 +6,11 @@ import org.json4s.Xml.toJson
 import org.json4s.JValue
 
 import java.nio.file.Paths
-import scala.util.Failure
-import scala.util.Success
+import scala.util.{Failure, Success, Try}
 
 object InsertDocumentDataBase extends App {
 
-  val path = Paths.get("/home/oliveirmic/local-documents")
   val importFileXmlLocal = new LocalDirectory()
-
   val connectionDataBase = new ConnectionDataBase("", "localhost", "27017", "DataProcessing", "fruits", true)
 
   def xml2json(xml: String): String = {
@@ -34,8 +31,5 @@ object InsertDocumentDataBase extends App {
         case Success(id) => println(s"Success! id=$id")
     })
   }
-
-  insertDocumentDatabase(importFileXmlLocal.convertXmlString()) //match
-    //case Success() => println(s"Success! id=Teste")
-    //case Failure(exception) => println(s"ErrorTeste: $exception")
+  insertDocumentDatabase(importFileXmlLocal.convertXmlString())
 }

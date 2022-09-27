@@ -18,7 +18,6 @@ object ValidateXML extends App {
   val url: String = currentRelativePath.toString + "/importTest/"
   val listFile = new File(url)
 
-
   for (i <- listFile.listFiles()) {
 
     val file = new File(i.toString)
@@ -45,10 +44,7 @@ object ValidateXML extends App {
         System.out.println("pessoa id : " + eElement.getAttribute("id"))
         System.out.println("nome : " + eElement.getElementsByTagName("nome").item(0).getTextContent)
         System.out.println("idade : " + eElement.getElementsByTagName("idade").item(0).getTextContent)
-
-
       }
     }
-
   }
 }
