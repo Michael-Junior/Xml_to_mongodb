@@ -1,7 +1,6 @@
 import com.mongodb.client.result.InsertOneResult
 import com.mongodb.client.{MongoClient, MongoClients, MongoCollection, MongoDatabase}
 import org.bson.{BsonValue, Document}
-import org.w3c.dom.NodeList
 
 import java.io.FileNotFoundException
 import java.util
@@ -23,7 +22,7 @@ class ConnectionDataBase(usrPswStr: String, hostStr: String, portStr: String, da
   def insertDocument(doc: String): Try[String] = {
 
     Try{
-      val document: Document = Document.parse(doc)
+      val document: Document = Document.parse(doc.toString)
       val insertResult: InsertOneResult = coll.insertOne(document)
 
       insertResult.getInsertedId.toString

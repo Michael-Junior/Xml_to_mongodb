@@ -1,8 +1,8 @@
-[error] sbt.librarymanagement.ResolveException: Error downloading com.eltimn:sbt-slf4j_3:2.0.1
+[error] sbt.librarymanagement.ResolveException: Error downloading org.mongodb.driver:mongodb-driver-sync:4.7.1
 [error]   Not found
 [error]   Not found
-[error]   not found: /home/oem/.ivy2/localcom.eltimn/sbt-slf4j_3/2.0.1/ivys/ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/eltimn/sbt-slf4j_3/2.0.1/sbt-slf4j_3-2.0.1.pom
+[error]   not found: /home/oliveirmic/.ivy2/localorg.mongodb.driver/mongodb-driver-sync/4.7.1/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/org/mongodb/driver/mongodb-driver-sync/4.7.1/mongodb-driver-sync-4.7.1.pom
 [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:345)
 [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:314)
 [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
@@ -27,14 +27,14 @@
 [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
 [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
 [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
-[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-[error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-[error] 	at java.base/java.lang.Thread.run(Thread.java:833)
-[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading com.eltimn:sbt-slf4j_3:2.0.1
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+[error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:1589)
+[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading org.mongodb.driver:mongodb-driver-sync:4.7.1
 [error]   Not found
 [error]   Not found
-[error]   not found: /home/oem/.ivy2/localcom.eltimn/sbt-slf4j_3/2.0.1/ivys/ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/eltimn/sbt-slf4j_3/2.0.1/sbt-slf4j_3-2.0.1.pom
+[error]   not found: /home/oliveirmic/.ivy2/localorg.mongodb.driver/mongodb-driver-sync/4.7.1/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/org/mongodb/driver/mongodb-driver-sync/4.7.1/mongodb-driver-sync-4.7.1.pom

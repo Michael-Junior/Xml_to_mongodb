@@ -5,59 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72002991-8b3b-436b-b644-377c028e769e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_3_2_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/ImportFiles.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Test.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/ValidatorXml.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/XML.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_3_2_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Data_processing-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Data_processing-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Data_processing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Data_processing.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2ab91fb862e0685e57b9$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2ab91fb862e0685e57b9.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2ab91fb862e0685e57b9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2eafa520c927c8a35e07$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2eafa520c927c8a35e07.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2eafa520c927c8a35e07.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$65b5a15ce0dcc5c5a50b$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$65b5a15ce0dcc5c5a50b.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$65b5a15ce0dcc5c5a50b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6dd93f05cfc9bf787b93$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6dd93f05cfc9bf787b93.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6dd93f05cfc9bf787b93.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/ConnectionDataBase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ConnectionDataBase.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ImportFiles.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ImportFiles.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LocalDirectory.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/LogGenerator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/LogGenerator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ValidateXML.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles$$anon$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles.tasty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/LocalDirectory$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/LocalDirectory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/LocalDirectory.tasty" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/update/update_cache_3/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/update/update_cache_3/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/update/update_cache_3/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/update/update_cache_3/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Test.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidatorXml.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidatorXml.tasty" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/input_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/ssExtractDependencies/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/ssExtractDependencies/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +113,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.7139614&quot;,
     &quot;scala_project_settings_configurable.last_selected_tab_index&quot;: &quot;0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="ScalaProjectSettings">
@@ -170,9 +145,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/ImportFiles.scala</url>
+          <url>file://$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala</url>
+          <line>16</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala</url>
+          <line>17</line>
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala</url>
           <line>18</line>
-          <option name="timeStamp" value="205" />
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala</url>
+          <line>14</line>
+          <option name="timeStamp" value="311" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -191,6 +181,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project_dados_mongodb$ImportDataBd.ic" NAME="ImportDataBd Coverage Results" MODIFIED="1663777399798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Data_processing$InsertDocumentDataBase.ic" NAME="InsertDocumentDataBase Coverage Results" MODIFIED="1664201011423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Data_processing$InsertDocumentDataBase.ic" NAME="InsertDocumentDataBase Coverage Results" MODIFIED="1664374232915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
