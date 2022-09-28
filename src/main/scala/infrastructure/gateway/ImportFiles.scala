@@ -1,14 +1,13 @@
+import org.json4s.JValue
+import org.json4s.Xml.toJson
+import org.json4s.native.JsonMethods.render
+import org.json4s.native.Printer.compact
+
 import java.io.{File, FilenameFilter}
 import java.nio.file.{Files, Path, Paths}
-import scala.xml.XML.loadString
 import java.util
-
+import scala.xml.XML.loadString
 import scala.xml.{Elem, SAXParseException, XML}
-import org.json4s.native.Printer.compact
-import org.json4s.native.JsonMethods.render
-import org.json4s.Xml.toJson
-import org.json4s.JValue
-
 
 class ImportFiles(pathFolderImport: String, path: String = "/import", extensionFIle: String = ".xml") {
 
@@ -27,7 +26,7 @@ class ImportFiles(pathFolderImport: String, path: String = "/import", extensionF
 
   def Xml2String(listFiles: collection.mutable.Seq[File]): collection.mutable.ListBuffer[String]  = {
 
-    val listStrXml: collection.mutable.ListBuffer[String] = collection.mutable.ListBuffer[String]()
+    val listStrXml = collection.mutable.ListBuffer[String]()
 
     listFiles.foreach(file => {
       val xmlFile = File(file.toString)

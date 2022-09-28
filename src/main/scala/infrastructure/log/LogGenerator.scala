@@ -1,9 +1,5 @@
-import java.io.BufferedWriter
-import java.io.File
-import java.io.FileWriter
-import java.nio.file.Files
-import java.nio.file.Path
-import java.nio.file.Paths
+import java.io.{BufferedWriter, File, FileWriter}
+import java.nio.file.{Files, Path, Paths}
 
 class LogGenerator(pathFolderLog: String, path: String = "/log") {
 

@@ -5,34 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72002991-8b3b-436b-b644-377c028e769e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ConnectionDataBase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ConnectionDataBase.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ImportFiles.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ImportFiles.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LogGenerator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/LogGenerator.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ValidateXML.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ConnectionDataBase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/infrastructure/mongodb/ConnectionMongo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ImportFiles.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/infrastructure/gateway/ImportFiles.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/LogGenerator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/infrastructure/log/LogGenerator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ConnectionDataBase.tasty" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles$$anon$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/ImportFiles.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/InsertDocumentDataBase.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/classes/LogGenerator.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Test$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/Test.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidateXML.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidatorXml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/ValidatorXml.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/ssExtractDependencies/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/ssExtractDependencies/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +72,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -103,20 +102,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/oliveirmic/Projetos-dev/GitHub/Data_processing&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.7139614&quot;,
-    &quot;scala_project_settings_configurable.last_selected_tab_index&quot;: &quot;0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "/home/oliveirmic/Projetos-dev/GitHub/Data_processing/src/main/scala",
+    "last_opened_file_path": "/home/oliveirmic/Projetos-dev/GitHub/Data_processing",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.7139614",
+    "scala_project_settings_configurable.last_selected_tab_index": "0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="Data_processing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="ScalaProjectSettings">
+    <option name="intInjectionMapping">
+      <map>
+        <entry key="html" value="HTML" />
+        <entry key="java" value="JAVA" />
+        <entry key="json" value="JSON" />
+        <entry key="json5" value="JSON5" />
+        <entry key="scala" value="Scala" />
+        <entry key="svg" value="SVG" />
+        <entry key="xhtml" value="XHTML" />
+        <entry key="xml" value="XML" />
+        <entry key="xpath" value="XPath" />
+        <entry key="yaml" value="yaml" />
+      </map>
+    </option>
     <option name="scala3DisclaimerShown" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -142,30 +165,6 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala</url>
-          <line>16</line>
-          <option name="timeStamp" value="306" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala</url>
-          <line>17</line>
-          <option name="timeStamp" value="307" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala</url>
-          <line>18</line>
-          <option name="timeStamp" value="308" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/InsertDocumentDataBase.scala</url>
-          <line>14</line>
-          <option name="timeStamp" value="311" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="sun.nio.fs.LinuxFileStore" memberName="entry" />
