@@ -3,18 +3,13 @@ import com.mongodb.client.{MongoClient, MongoClients, MongoCollection, MongoData
 import org.bson.{BsonValue, Document}
 import org.w3c.dom.NodeList
 
+import java.io.FileNotFoundException
 import java.util
 import scala.jdk.CollectionConverters.{CollectionHasAsScala, SeqHasAsJava}
 import scala.util.Try
 
 class ConnectionDataBase(usrPswStr: String, hostStr: String, portStr: String, database: String, collection: String, clear: Boolean) {
-
-  val this.usrPswStr: String = usrPswStr
-  val this.hostStr: String = hostStr
-  val this.portStr: String = portStr
-  val this.database: String = database
-  val this.collection: String = collection
-
+  
   val mongoUri: String = s"mongodb://$usrPswStr$hostStr:$portStr"
   val mongoClient: MongoClient = MongoClients.create(mongoUri)
   val dbase: MongoDatabase = mongoClient.getDatabase(database)
@@ -43,4 +38,14 @@ class ConnectionDataBase(usrPswStr: String, hostStr: String, portStr: String, da
       insertedIds.asScala.toSeq.map(_.asObjectId().getValue.toString())
     }
   }
+
+  def getDocument(doc: String): Unit = {}                        //Implementar o metodo getDocument
+
+  def updateDocument(doc: String): Unit = {}                     //Implementar o metodo updateDocument
+
+  def updateDocuments(docs: Seq[String]): Unit = {}              //Implementar o metodo updateDocuments
+
+  def deleteDocument(doc: String): Unit = {}                     //Implementar o metodo deleteDocument
+
+  def deleteDocuments(docs: Seq[String]): Unit = {}              //Implementar o metodo deleteDocuments
 }
