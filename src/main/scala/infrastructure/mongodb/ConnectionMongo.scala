@@ -7,7 +7,7 @@ import java.util
 import scala.jdk.CollectionConverters.{CollectionHasAsScala, SeqHasAsJava}
 import scala.util.Try
 
-class ConnectionDataBase(usrPswStr: String, hostStr: String, portStr: String, database: String, collection: String, clear: Boolean) {
+class ConnectionMongo(usrPswStr: String, hostStr: String, portStr: String, database: String, collection: String, clear: Boolean) {
   
   val mongoUri: String = s"mongodb://$usrPswStr$hostStr:$portStr"
   val mongoClient: MongoClient = MongoClients.create(mongoUri)
@@ -22,10 +22,10 @@ class ConnectionDataBase(usrPswStr: String, hostStr: String, portStr: String, da
   def insertDocument(doc: String): Try[String] = {
 
     Try{
-      val document: Document = Document.parse(doc.toString)
+      val document: Document = Document.parse(doc)
       val insertResult: InsertOneResult = coll.insertOne(document)
 
-      insertResult.getInsertedId.toString
+      insertResult. getInsertedId.toString
     }
   }
 
@@ -37,14 +37,4 @@ class ConnectionDataBase(usrPswStr: String, hostStr: String, portStr: String, da
       insertedIds.asScala.toSeq.map(_.asObjectId().getValue.toString())
     }
   }
-
-  def getDocument(doc: String): Unit = {}                        //Implementar o metodo getDocument
-
-  def updateDocument(doc: String): Unit = {}                     //Implementar o metodo updateDocument
-
-  def updateDocuments(docs: Seq[String]): Unit = {}              //Implementar o metodo updateDocuments
-
-  def deleteDocument(doc: String): Unit = {}                     //Implementar o metodo deleteDocument
-
-  def deleteDocuments(docs: Seq[String]): Unit = {}              //Implementar o metodo deleteDocuments
 }
