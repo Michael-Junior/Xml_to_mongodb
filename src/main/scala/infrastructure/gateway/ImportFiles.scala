@@ -6,6 +6,7 @@ import org.json4s.native.Printer.compact
 import java.io.{File, FilenameFilter}
 import java.nio.file.{Files, Path, Paths}
 import java.util
+import scala.io.Source
 import scala.xml.XML.loadString
 import scala.xml.{Elem, SAXParseException, XML}
 
@@ -14,7 +15,7 @@ class ImportFiles(pathFolderImport: String, path: String = "/import", extensionF
   val url: String = {pathFolderImport + path}
   val dirFile = new File(url)
 
-  val listFiles: collection.mutable.Seq[File] = dirFile.listFiles(
+  val listFiles = dirFile.listFiles(
     new FilenameFilter :
       override def accept(dir: File, name: String):
       Boolean = if name.endsWith(extensionFIle) then true
@@ -24,18 +25,20 @@ class ImportFiles(pathFolderImport: String, path: String = "/import", extensionF
       }
   )
 
-  def Xml2String(listFiles: collection.mutable.Seq[File]): collection.mutable.ListBuffer[String]  = {
+  def file2String(listFiles: Seq[File]) : Seq[String] = {
 
-    val listStrXml = collection.mutable.ListBuffer[String]()
+    listFiles.map(x => convertFileToJson(x))
+//    listFiles.map(convertFileToJson(_))
+//    listFiles.map(convertFileToJson)
+  }
 
-    listFiles.foreach(file => {
-      val xmlFile = File(file.toString)
-      val byteFileXml = Files.readAllBytes(xmlFile.toPath)
-      val xmlStr = new String(byteFileXml)
+  def convertFileToJson(file: File) : String = {
 
-      listStrXml += xml2json(xmlStr)
-    })
-    listStrXml
+    val xmlFile = File(file.toString)
+    val byteFileXml: Array[Byte] = Files.readAllBytes(xmlFile.toPath)
+    val xmlStr = new String(byteFileXml)
+
+    xml2json(xmlStr)
   }
 
   def xml2json(xml: String): String = {

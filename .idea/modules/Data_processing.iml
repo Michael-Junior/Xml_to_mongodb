@@ -12,6 +12,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:geny_3:0.6.10:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:requests_3:0.6.9:jar" level="project" />
     <orderEntry type="library" name="sbt: com.thoughtworks.paranamer:paranamer:2.8:jar" level="project" />
     <orderEntry type="library" name="sbt: org.json4s:json4s-ast_3:4.1.0-M1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.json4s:json4s-core_3:4.1.0-M1:jar" level="project" />

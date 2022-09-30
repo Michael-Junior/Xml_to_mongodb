@@ -12,17 +12,17 @@ object main extends App {
     true
   )
 
-
-  def main(listImports: collection.mutable.ListBuffer[String]): Unit = {
+  def main(listImports: Seq[String]): Unit = {
 
     listImports.foreach(f => {
       val document = importFileXmlLocal.xml2json(f)
 
       connectionMongo.insertDocument(document) match
-        case Failure(exception) => println(s"Error: $exception")
         case Success(id) => println(s"Success! id=$id")
+        case Failure(exception) => println(s"Error: $exception")
+
     })
   }
 
-  main(importFileXmlLocal.Xml2String(importFileXmlLocal.listFiles))
+  main(importFileXmlLocal.file2String(importFileXmlLocal.listFiles))
 }
