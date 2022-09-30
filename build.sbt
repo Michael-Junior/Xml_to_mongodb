@@ -6,6 +6,8 @@ val mongodbVersion = "4.7.1"
 val json4sVersion = "4.1.0-M1"
 val slf4jVersion = "2.0.1"
 val scalaXml = "2.1.0"
+val requests = "0.6.9"
+val jacksonModuleScala = "2.13.4"
 
 lazy val root = (project in file("."))
   .settings(
@@ -16,6 +18,7 @@ lazy val root = (project in file("."))
       "org.json4s" %% "json4s-core" % json4sVersion,
       "org.json4s" %% "json4s-native" % json4sVersion,
       "org.json4s" %% "json4s-xml" % json4sVersion,
-      "org.scala-lang.modules" %% "scala-xml" % scalaXml
+      "org.scala-lang.modules" %% "scala-xml" % scalaXml,
+      "com.lihaoyi" %% "requests" % requests,
     )
   )
